@@ -1,0 +1,9 @@
+*{
+    padding:0;
+    margin:0;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color:rgb(3, 21, 51);
+}

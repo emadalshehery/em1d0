@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    scroll-behavior:smooth;
+}
+
+body{
+    color: rgb(103, 204, 171), rgb(13, 36, 76), rgb(22, 52, 103), rgb(3, 21, 51), rgb(69, 140, 116);
+    background-color:rgb(3, 21, 51);
+}
+
+header{
+    color:rgb(103, 204, 171);
+    font-family:'Jersey 10';
+    font-size:50px;
+    text-align:center;
+    margin:2rem auto;
+}
+
+nav{
+    margin:1rem auto;
+    margin-bottom:10rem;
+
+    border-top:1px;
+    border-style:solid;
+    border-color:rgb(103, 204, 171);
+    opacity:20%;
+
+}
+
+section{
+    text-align:center;
+    font-family:'Jersey 10';
+    font-size:30px;
+}
+
+section img{
+    width:20px;
+    height:20px;
+    margin:-3px auto;
+}
+
+a{
+    color:rgb(103, 204, 171);
+    text-decoration:none;
+    text-align:center;
+}
+
+button{
+    color:rgb(103, 204, 171);
+    background-color: rgb(3, 21, 51);
+    text-decoration:none;
+
+    font-family:'Jersey 10';
+    font-size:30px;
+
+    border:1rem;
+    border-style:solid;
+    border-radius:25px;
+    border-color:rgb(3, 21, 51);
+
+    margin-left:3rem;
+    
+}
+
+button:hover{
+    scale: 1.2;
+
+    background-color:rgb(13, 36, 76);
+    border-color:rgb(13, 36, 76);
+    box-shadow:5px 5px 20px rgb(22, 52, 103), -5px -5px 20px rgb(69, 140, 116);
+
+}
+
+.YouTube{
+    transition: .1s ease;
+}
+.YouTube:active{
+    scale: .7;
+}
+
+.IG{
+    transition: .1s ease;
+}
+.IG:active{
+    scale: .7;
+}
+
+.X{
+    transition: .1s ease;
+}
+.X:active{
+    scale: .7;
+}
+
+@media (max-width:1023px) {
+    header{
+        font-size: 6rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+    
+    section img{
+        width:3rem;
+        height:3rem;
+        margin-top: 2rem;
+    }
+
+    button{
+        font-size:3rem;
+    }
+}

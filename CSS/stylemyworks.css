@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    scroll-behavior:smooth;
+
+}
+
+body{
+    background-color:rgb(3, 21, 51);
+}
+
+header{
+    color:rgb(103, 204, 171);
+    font-family:'Jersey 10';
+    font-size:50px;
+    text-align:center;
+
+    margin:3rem;
+   
+}
+
+nav{
+    border-top:1px;
+    border-style:solid;
+    border-color:rgb(103, 204, 171);
+    opacity:20%;
+    
+}
+
+section{
+    text-align:center;
+    font-family:'Jersey 10';
+    font-size:30px;
+
+    margin-top:5rem;
+    
+}
+
+a{
+    color:rgb(103, 204, 171);
+    text-decoration:none;
+    text-align:center;
+
+}
+
+button{
+    color:rgb(103, 204, 171);
+    background-color: rgb(3, 21, 51);
+    text-decoration:none;
+
+    
+    font-family:'Jersey 10';
+    font-size:30px;
+
+    border:1rem;
+    border-radius:25px;
+    border-style:solid;
+    border-color:rgb(3, 21, 51);
+
+    margin-left:3rem;
+
+}
+
+button:hover{
+    scale: 1.2;
+
+    background-color:rgb(13, 36, 76);
+    border-color:rgb(13, 36, 76);
+    box-shadow:5px 5px 20px rgb(13, 36, 76), -5px -5px 20px rgb(69, 140, 116);
+}
+
+.LinkedIn{
+    transition: .1s ease;
+}
+.LinkedIn:active{
+    scale: .7;
+}
+
+.GitHub{
+    transition: .1s ease;
+}
+.GitHub:active{
+    scale: .7;
+}
+
+.ItchIo{
+    transition: .1s ease;
+}
+.ItchIo:active{
+    scale: .7;
+}
+
+.Projects{
+    text-align: center;
+    font-family:'Jersey 10';
+    font-size:30px;
+    color:rgb(103, 204, 171);
+    margin-top:10rem;
+    margin-left: 2rem; 
+    
+
+    
+}
+
+.AI:hover{
+    font-size: 60px;
+
+    background-color:rgb(13, 36, 76);
+    border-color:rgb(13, 36, 76);
+    box-shadow:5px 5px 20px rgb(13, 36, 76), -5px -5px 20px rgb(69, 140, 116);
+}
+
+.GamesDev:hover{
+    font-size: 60px;
+
+    background-color:rgb(13, 36, 76);
+    border-color:rgb(13, 36, 76);
+    box-shadow:5px 5px 20px rgb(13, 36, 76), -5px -5px 20px rgb(69, 140, 116);
+}
+
+.WebDev:hover{
+    font-size: 60px;
+
+    background-color:rgb(13, 36, 76);
+    border-color:rgb(13, 36, 76);
+    box-shadow:5px 5px 20px rgb(13, 36, 76), -5px -5px 20px rgb(69, 140, 116);
+}
+
+.AI{
+    border: 4rem;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: rgb(13, 36, 76);
+    background-color: rgb(13, 36, 76);
+    
+    transition: .1s ease;
+}
+
+.GamesDev{
+    border: 4rem;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: rgb(13, 36, 76);
+    background-color: rgb(13, 36, 76);
+    margin-left: 2rem;
+    
+    transition: .1s ease;
+}
+
+.WebDev{
+    border: 4rem;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: rgb(13, 36, 76);
+    background-color: rgb(13, 36, 76);
+    margin-left: 2rem;
+    
+    transition: .2s ease;
+}
+
+.ProjectsContent{
+    color:rgb(103, 204, 171);
+    font-family:'Jersey 10';
+    font-size:30px;
+    margin-top:30rem;
+}
+
+#AI{
+   margin-bottom: 2rem;
+}
+
+#GamesDev{
+   margin-bottom: 2rem;
+}
+
+#WebDev{
+   margin-bottom: 2rem;
+}
+
+@media (max-width:1023px) {
+    header{
+        font-size:7rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }    
+
+    button{
+        font-size: 3rem;
+        margin-top:1rem;
+    }
+    img{
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .Projects{
+        font-size: 2rem;
+        margin-top: 10rem;
+        flex-direction: column;
+    }
+    .AI{
+        border: 2rem;
+        border-radius: 1rem;
+        border-style: solid;
+        border-color: rgb(13, 36, 76);
+        background-color: rgb(13, 36, 76);
+        
+        transition: .1s ease;
+    }
+    .AI:active{
+        font-size: 2rem;
+
+        background-color:rgb(13, 36, 76);
+        border-color:rgb(13, 36, 76);
+        box-shadow:5px 5px 20px rgb(13, 36, 76), -5px -5px 20px rgb(69, 140, 116);
+    }
+    .GamesDev{
+        border: 2rem;
+        border-radius: 1rem;
+        border-style: solid;
+        border-color: rgb(13, 36, 76);
+        background-color: rgb(13, 36, 76);
+        margin-left: 2rem;
+        
+        transition: .1s ease;
+    }
+    .GamesDev:active{
+        font-size: 2rem;
+
+        background-color:rgb(13, 36, 76);
+        border-color:rgb(13, 36, 76);
+        box-shadow:5px 5px 20px rgb(13, 36, 76), -5px -5px 20px rgb(69, 140, 116);
+    }
+    .WebDev{
+        border: 2rem;
+        border-radius: 1rem;
+        border-style: solid;
+        border-color: rgb(13, 36, 76);
+        background-color: rgb(13, 36, 76);
+        margin-left: 2rem;
+        
+        transition: .2s ease;
+    }
+    .WebDev:active{
+        font-size: 2rem;
+
+        background-color:rgb(13, 36, 76);
+        border-color:rgb(13, 36, 76);
+        box-shadow:5px 5px 20px rgb(13, 36, 76), -5px -5px 20px rgb(69, 140, 116);
+    }
+    .ProjectsContent{
+        font-size: 4rem;
+        margin-top: 100rem;
+    }
+}

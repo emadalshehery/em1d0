@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+*{
+    scroll-behavior: smooth;
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color:rgb(3, 21, 51);
+
+
+}    
+
+header{
+    display:flex;
+    justify-content:space-between;
+    
+}
+
+
+.Buttons{
+    display:flex;
+    justify-content:space-between;
+
+    margin-top: 2rem;
+    margin-left: 2rem  ;
+
+    .Content{
+        color:rgb(103, 204, 171);
+        background-color:rgb(3, 21, 51);
+        font-family:'Jersey 10';
+        font-size :2rem;
+
+        border:1rem;
+        border-radius:25px;
+        border-style: solid;
+        border-color:rgb(3, 21, 51);
+
+        text-decoration: none;
+        
+
+        transition: .1s ease;
+    }
+    .Content:hover{
+        scale: 1.2;
+
+        background-color:rgb(13, 36, 76);
+        border-color:rgb(13, 36, 76);
+        box-shadow:5px 5px 20px rgb(13, 36, 76), -5px -5px 20px rgb(69, 140, 116);
+    }
+    .Content:active{
+        scale: .7;
+    }
+
+
+    .MyWorks{
+        color:rgb(103, 204, 171);
+        background-color:rgb(3, 21, 51);
+        font-family:'Jersey 10';
+        font-size :2rem;
+
+        border:1rem;
+        border-radius:25px;
+        border-style: solid;
+        border-color:rgb(3, 21, 51);
+        
+        text-decoration: none;
+        margin-left: 4rem ;
+
+        transition: .1s ease;
+    }
+    .MyWorks:hover{
+        scale: 1.2;
+
+        background-color:rgb(13, 36, 76);
+        border-color:rgb(13, 36, 76);
+        box-shadow:5px 5px 20px rgb(13, 36, 76), -5px -5px 20px rgb(69, 140, 116);
+    }
+    .MyWorks:active{
+        scale: .7;
+    }
+
+
+    .Contact{
+        color:rgb(103, 204, 171);
+        background-color:rgb(3, 21, 51);
+        font-family:'Jersey 10';
+        font-size :2rem;
+
+        border:1rem;
+        border-radius:25px;
+        border-style: solid;
+        border-color:rgb(3, 21, 51);
+
+        text-decoration: none;
+        margin-left:4rem;
+
+        transition: .1s ease;
+    }
+    .Contact:hover{
+        scale: 1.2;
+
+        background-color:rgb(13, 36, 76);
+        border-color:rgb(13, 36, 76);
+        box-shadow:5px 5px 20px rgb(13, 36, 76), -5px -5px 20px rgb(69, 140, 116);
+
+    }
+    .Contact:active{
+        scale: .7;
+    }
+}
+
+
+.Em1d0Icon{
+    width:5rem;
+    height:5rem;
+    margin-top:1rem;
+    margin-right:1rem;
+
+    border:7px;
+    border-radius:50%;
+    border-color:rgb(13, 36, 76);
+    border-style:solid;
+
+    box-shadow: 5px 5px 20px rgb(90, 6, 70), -5px -5px 20px rgb(9, 29, 89);
+
+}
+
+
+nav{
+    border-top-style:solid;
+    border-color:rgb(103, 204, 171);
+    opacity:20%;
+    margin-top:3rem;
+
+    text-align:center;
+}
+
+.BGS{
+    background-image: url(em1d0.html/background.DarkBlue.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.Info{
+    justify-content:space-between;
+
+    .BGE{
+        text-align: center; 
+
+        border-radius: 25px;
+        border: 25px;
+        border-style: solid;
+        border-color:rgb(13, 36, 76);
+        background-color:rgb(13, 36, 76);
+
+        margin-left: 10rem;
+        margin-right: 10rem;
+        margin-top: 5rem;
+    }
+
+    .Emad{
+        text-align: center;
+        
+        color:rgb(103, 204, 171);
+        font-family:'Jersey 10';
+        font-size:4rem;
+        
+    }
+
+    
+    .IS{
+        text-align: center;
+
+        color: rgb(69, 140, 116);
+        font-family: 'Jersey 10';
+        font-size:2rem;
+
+        text-decoration: none;
+
+        transition: .1s ease;
+    }
+    .IS:hover{
+        scale: 1.2;
+        color: rgb(103, 204, 171);
+       
+    }
+    .IS:active{
+        scale: .7;
+    }
+
+    .Center{
+        display: flex;
+
+    }
+
+    .AboutEmad {
+        margin-left: 10rem;
+        margin-top: 5rem;
+
+        flex: 1;
+        
+        border-radius: 25px;
+        border: 25px;
+        border-style: solid;
+        border-color:rgb(13, 36, 76);
+        background-color:rgb(13, 36, 76);
+
+        color: rgb(103, 204, 171);
+        font-family: 'Jersey 10';
+        font-size: 2rem;
+    }
+
+
+    .Skills{
+        margin-left: 5rem;
+        margin-right: 10rem;
+        margin-top: 5rem;
+
+        padding-bottom: 2rem;
+
+        gap:2rem;
+        
+
+        flex: 2;
+
+        border-radius: 25px;
+        border: 25px;
+        border-style: solid;
+        border-color:rgb(13, 36, 76);
+        background-color:rgb(13, 36, 76);
+
+        
+
+        color: rgb(103, 204, 171);
+        font-family: 'Jersey 10';
+        font-size: 2rem;
+    }
+
+    .Contacts{
+        
+        border: 1rem;
+        border-style: solid;
+        border-radius:25px;
+        border-color:rgb(13, 36, 76);
+        background-color: rgb(13, 36, 76);
+
+        margin-left: 10rem;
+        margin-right: 10rem;
+        margin-top: 5rem;
+
+        .MyNumber{
+            display:flex;
+            margin: 2rem;
+
+            color:rgb(103, 204, 171);
+            font-family:'Jersey 10';
+            font-size:1rem;
+
+            .TheNumber{
+                color:rgb(255, 0, 255);
+                text-decoration:none;
+                text-align:center;
+                font-size: 2rem;
+
+                margin-left: 1rem;
+                transition: .1s ease;
+            }
+            .TheNumber:hover{
+                color:rgb(150, 0, 150);
+                text-decoration:underline;
+            }
+            .TheNumber:active{
+                scale: .9;
+            }
+        }
+        .MyEmail{
+            display:flex;
+            margin: 2rem;
+            
+            color:rgb(103, 204, 171);
+            font-family:'Jersey 10';
+            font-size:1rem;
+
+            .TheEmail{
+                color:rgb(255, 0, 255);
+                text-decoration:none;
+                text-align:center;
+                font-size: 2rem;
+
+                margin-left: 1rem;
+                transition: .1s ease;
+            }
+            .TheEmail:hover{
+                color:rgb(150, 0, 150);
+                text-decoration:underline;
+            }
+            .TheEmail:active{
+                scale: .9;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 1023px) {
+
+
+    .Buttons{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        .Content{
+            max-height: 40px;
+            font-size :2rem;
+        }
+        .MyWorks{
+            max-height: 40px;
+            font-size :2rem;
+        }
+        .Contact{
+            max-height: 40px;
+            font-size :2rem;
+
+        }
+    }
+    .Em1d0Icon{
+        width:5rem;
+        height:5rem;
+        margin-top: 2rem;
+        margin-right:2rem;
+        margin-bottom: 2rem;
+    }
+
+    nav{
+        margin-top: 1rem;
+        margin-right: 0;
+    }
+
+    .Info{   
+        .Emad{
+            font-size:3rem;
+        }
+        .Align{
+            text-align: center;
+        }
+        .IS{
+            font-size: 2rem;
+        }
+        .AboutEmad {
+            font-size: 19px;
+        }
+        .Skills{
+            padding-bottom: 4rem;
+            font-size: 2rem;
+        }
+    }
+        
+    .MyNumber{
+        font-size: 19px;
+        .TheNumber{
+            font-size: 19px;
+        }
+    }
+    .MyEmail{
+        font-size: 19px;
+        .TheEmail{
+            font-size: 10px;
+        }
+    }
+}
