@@ -493,7 +493,7 @@ nav{
 
 .ProjectGallery img{
     width: 280px;
-    max-width: 100%;
+    max-width: 50%;
     height:auto;
 
     border-radius:15px;
