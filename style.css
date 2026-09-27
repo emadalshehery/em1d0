@@ -461,6 +461,56 @@ nav{
     opacity:.6;
 }
 
+.ProjectCard{
+    text-align:center;
+}
+
+.ProjectName{
+    color:rgb(103, 204, 171);
+    font-family:'Jersey 10';
+    font-size:2.5rem;
+    margin-bottom: .5rem;
+}
+
+.ProjectDescription{
+    color:rgb(103, 204, 171);
+    font-family:'Jersey 10';
+    font-size:1.3rem;
+    opacity:.85;
+
+    max-width: 900px;
+    margin: 0 auto 1.5rem auto;
+}
+
+.ProjectGallery{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:1rem;
+
+    margin-bottom: 1.5rem;
+}
+
+.ProjectGallery img{
+    width: 280px;
+    max-width: 100%;
+    height:auto;
+
+    border-radius:15px;
+    border: 4px solid rgb(3, 21, 51);
+
+    transition: .15s ease;
+}
+
+.ProjectGallery img:hover{
+    scale: 1.05;
+    box-shadow:5px 5px 20px rgb(22, 52, 103), -5px -5px 20px rgb(69, 140, 116);
+}
+
+.ProjectLinks{
+    margin-top: 0;
+}
+
 @media (max-width: 1023px) {
     .PanelTitle{
         font-size: 4rem;
@@ -479,6 +529,15 @@ nav{
     }
     .ProjectsList{
         font-size: 2rem;
+    }
+    .ProjectName{
+        font-size: 3rem;
+    }
+    .ProjectDescription{
+        font-size: 1.8rem;
+    }
+    .ProjectGallery img{
+        width: 90%;
     }
 }
 
