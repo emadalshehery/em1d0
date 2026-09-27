@@ -4,6 +4,13 @@
     scroll-behavior: smooth;
     margin:0;
     padding:0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+    display:block;
 }
 
 body{
@@ -455,6 +462,10 @@ nav{
     border-radius:25px;
     margin-top:1.5rem;
     padding: 1.5rem;
+
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .ProjectsList .EmptyNote{
@@ -483,18 +494,20 @@ nav{
 }
 
 .ProjectGallery{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap:1rem;
 
+    width: 100%;
+    box-sizing: border-box;
     margin-bottom: 1.5rem;
 }
 
 .ProjectGallery img{
-    width: 280px;
-    max-width: 50%;
+    display:block;
+    width:100%;
     height:auto;
+    max-width:100%;
 
     border-radius:15px;
     border: 4px solid rgb(3, 21, 51);
@@ -509,6 +522,53 @@ nav{
 
 .ProjectLinks{
     margin-top: 0;
+}
+
+/* Small clickable tile (icon + name); click reveals the game's info panel */
+.GameTiles{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:1.5rem;
+}
+
+.GameTile{
+    display:flex;
+    align-items:center;
+    gap:1rem;
+
+    background-color: rgb(3, 21, 51);
+    border-radius:15px;
+    padding: .75rem 1.5rem;
+
+    cursor:pointer;
+    transition: .15s ease;
+}
+
+.GameTile:hover{
+    scale: 1.05;
+    box-shadow:5px 5px 20px rgb(22, 52, 103), -5px -5px 20px rgb(69, 140, 116);
+}
+
+.GameTile:active{
+    scale: .95;
+}
+
+.GameIcon{
+    display:block;
+    width:64px;
+    height:64px;
+    max-width:64px;
+
+    border-radius:10px;
+    object-fit:cover;
+    image-rendering: pixelated;
+}
+
+.GameTileName{
+    color:rgb(103, 204, 171);
+    font-family:'Jersey 10';
+    font-size:2rem;
 }
 
 @media (max-width: 1023px) {
@@ -536,8 +596,16 @@ nav{
     .ProjectDescription{
         font-size: 1.8rem;
     }
-    .ProjectGallery img{
-        width: 90%;
+    .ProjectGallery{
+        grid-template-columns: 1fr;
+    }
+    .GameTileName{
+        font-size: 2.5rem;
+    }
+    .GameIcon{
+        width:80px;
+        height:80px;
+        max-width:80px;
     }
 }
 
