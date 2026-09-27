@@ -29,11 +29,11 @@
         <body >
             <header>
                     <div class="Buttons">
-                        <a class="Content" href="Content.html">
+                        <a class="Content" href="#ContentPanel" data-toggle="ContentPanel">
                             Content
                         </a>
 
-                        <a class="MyWorks" href="MyWorksSite.html">
+                        <a class="MyWorks" href="#WorksPanel" data-toggle="WorksPanel">
                             My works
                         </a>
 
@@ -82,6 +82,94 @@
                 </div>
             </section>  
 
+            <!-- CONTENT PANEL (revealed when "Content" is clicked) -->
+            <section class="PanelSection">
+                <div id="ContentPanel" class="collapsible">
+                    <div class="collapsible-inner">
+                        <h2 class="PanelTitle">My Content Accounts</h2>
+
+                        <div class="AccountButtons">
+                            <a class="YouTube" href="https://www.youtube.com/@em1d0_XD">
+                                <img src="youtube icon.png" alt="You Tube Icon">
+                                My Channel !
+                            </a>
+
+                            <a class="IG" href="https://www.instagram.com/em1d0/?next=%2F">
+                                <img src="instagram icon.png" alt="Instagram Icon">
+                                My Instagram !
+                            </a>
+
+                            <a class="X" href="https://www.X.com/zgr_xdx">
+                                <img src="X icon.png" alt="X Icon">
+                                My X !
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- MY WORKS PANEL (revealed when "My works" is clicked) -->
+            <section class="PanelSection">
+                <div id="WorksPanel" class="collapsible">
+                    <div class="collapsible-inner">
+                        <h2 class="PanelTitle">My Works</h2>
+
+                        <div class="AccountButtons">
+                            <a class="ItchIo" href="https://em1d0.itch.io/">
+                                <img src="Itch.png" alt="Itch.io Icon">
+                                My Itch.io !
+                            </a>
+
+                            <a class="GitHub" href="https://github.com/emadalshehery">
+                                <img src="GitHub icon.png" alt="GitHub Icon">
+                                My GitHub !
+                            </a>
+                        </div>
+
+                        <div class="ProjectCategoryButtons">
+                            <a class="WebDev" href="#WebDevPanel" data-toggle="WebDevPanel" data-group="works-sub">
+                                Web Development
+                            </a>
+
+                            <a class="GamesDev" href="#GamesDevPanel" data-toggle="GamesDevPanel" data-group="works-sub">
+                                Games Development
+                            </a>
+
+                            <a class="AI" href="#AIPanel" data-toggle="AIPanel" data-group="works-sub">
+                                AI Projects
+                            </a>
+                        </div>
+
+                        <div id="WebDevPanel" class="collapsible sub-collapsible" data-group="works-sub">
+                            <div class="collapsible-inner">
+                                <h3 class="ProjectsTitle">Web Development Projects</h3>
+                                <div class="ProjectsList" id="WebDevProjects">
+                                    <p class="EmptyNote">Projects coming soon...</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="GamesDevPanel" class="collapsible sub-collapsible" data-group="works-sub">
+                            <div class="collapsible-inner">
+                                <h3 class="ProjectsTitle">Games Development Projects</h3>
+                                <div class="ProjectsList" id="GamesDevProjects">
+                                    <p class="EmptyNote">Projects coming soon...</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="AIPanel" class="collapsible sub-collapsible" data-group="works-sub">
+                            <div class="collapsible-inner">
+                                <h3 class="ProjectsTitle">AI Projects</h3>
+                                <div class="ProjectsList" id="AIProjects">
+                                    <p class="EmptyNote">Projects coming soon...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <section class="BGF" >  
                 <footer class="Info">
                     <div class="Contacts" id="Contact">
@@ -104,5 +192,6 @@
                 </footer>   
             </section>
 
+            <script src="JS/script.js"></script>
         </body>
     </html>
