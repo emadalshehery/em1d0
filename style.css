@@ -575,106 +575,95 @@ nav{
     font-size:2rem;
 }
 
+/* ===================== Mobile / Tablet ===================== */
 @media (max-width: 1023px) {
-    .PanelTitle{
-        font-size: 4rem;
+    header{
+        flex-direction: column-reverse;
+        align-items: center;
     }
-    .ProjectsTitle{
-        font-size: 2.5rem;
+    .Buttons{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: .5rem;
+        margin: 1rem 1rem 0;
     }
+    .Buttons a[class]{
+        margin-left: 0;
+        font-size: 1.5rem;
+        border-width: .4rem;
+    }
+    .Em1d0Icon{
+        width: 4rem;
+        height: 4rem;
+        margin: 1rem 0 0;
+    }
+    nav{ margin-top: 1rem; }
+
+    .Info .BGE{
+        margin: 2rem 1rem 0;
+        border-width: 1rem;
+    }
+    .Info .Emad{ font-size: 2.5rem; }
+    .Info .IS{ font-size: 1.5rem; }
+    .Info .Center{ flex-direction: column; }
+    .Info .AboutEmad,
+    .Info .Skills{
+        flex: none;
+        margin: 1.5rem 1rem 0;
+        border-width: 1.5rem;
+        font-size: 1.4rem;
+    }
+    .Info .Skills{ padding-bottom: 0; }
+
+    .Info .Contacts{ margin: 2rem 1rem; }
+    .Info .Contacts .MyNumber,
+    .Info .Contacts .MyEmail{
+        flex-direction: column;
+        margin: 1rem;
+    }
+    .Info .Contacts h1{ font-size: 1.5rem; }
+    .Info .Contacts .TheNumber,
+    .Info .Contacts .TheEmail{
+        margin-left: 0;
+        font-size: 1.4rem;
+        overflow-wrap: anywhere;
+    }
+
+    .collapsible.open > .collapsible-inner{ padding: 1.5rem .75rem; }
+    .PanelTitle{ font-size: 2.2rem; }
+    .ProjectsTitle{ font-size: 1.6rem; }
+    .AccountButtons{ gap: 1rem; }
     .AccountButtons a{
-        font-size: 2rem;
+        font-size: 1.3rem;
+        border-width: .4rem;
+        padding: .3rem 1rem;
     }
-    .ProjectCategoryButtons a{
-        font-size: 2.2rem;
-    }
+    .ProjectCategoryButtons{ gap: 1rem; margin-top: 2rem; }
+    .ProjectCategoryButtons a,
     .ProjectCategoryButtons a:hover{
-        font-size: 2.4rem;
+        font-size: 1.4rem;
+        padding: 1rem 1.5rem;
     }
-    .ProjectsList{
-        font-size: 2rem;
-    }
-    .ProjectName{
-        font-size: 3rem;
-    }
-    .ProjectDescription{
-        font-size: 1.8rem;
-    }
-    .ProjectGallery{
-        grid-template-columns: 1fr;
-    }
-    .ProjectTileName{
-        font-size: 2.5rem;
-    }
+    .ProjectsList{ font-size: 1.2rem; padding: 1rem; }
+    .ProjectName{ font-size: 1.8rem; }
+    .ProjectDescription{ font-size: 1.1rem; }
+    .ProjectGallery{ grid-template-columns: 1fr; }
+    .ProjectTileName{ font-size: 1.5rem; }
     .ProjectIcon{
-        width:80px;
-        height:80px;
-        max-width:80px;
+        width: 56px;
+        height: 56px;
+        max-width: 56px;
     }
 }
 
-@media (max-width: 1023px) {
-
-
-    .Buttons{
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-        .Content{
-            max-height: 40px;
-            font-size :2rem;
-        }
-        .MyWorks{
-            max-height: 40px;
-            font-size :2rem;
-        }
-        .Contact{
-            max-height: 40px;
-            font-size :2rem;
-
-        }
-    }
-    .Em1d0Icon{
-        width:5rem;
-        height:5rem;
-        margin-top: 2rem;
-        margin-right:2rem;
-        margin-bottom: 2rem;
-    }
-
-    nav{
-        margin-top: 1rem;
-        margin-right: 0;
-    }
-
-    .Info{   
-        .Emad{
-            font-size:3rem;
-        }
-        .Align{
-            text-align: center;
-        }
-        .IS{
-            font-size: 2rem;
-        }
-        .AboutEmad {
-            font-size: 19px;
-        }
-        .Skills{
-            padding-bottom: 4rem;
-            font-size: 2rem;
-        }
-    }
-        
-    .MyNumber{
-        font-size: 19px;
-        .TheNumber{
-            font-size: 19px;
-        }
-    }
-    .MyEmail{
-        font-size: 19px;
-        .TheEmail{
-            font-size: 10px;
-        }
+/* No sticky "hover" zoom on touch screens */
+@media (hover: none) {
+    .Buttons a[class]:hover,
+    .AccountButtons a:hover,
+    .ProjectTile:hover,
+    .ProjectGallery img:hover,
+    .Info .IS:hover{
+        scale: 1;
+        box-shadow: none;
     }
 }
