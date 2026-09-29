@@ -347,7 +347,7 @@ nav{
     padding: 0 2rem;
 }
 
-.collapsible.open .collapsible-inner{
+.collapsible.open > .collapsible-inner{
     opacity:1;
     transform: translateY(0);
     padding: 2rem;
