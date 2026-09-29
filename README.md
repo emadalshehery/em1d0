@@ -9,7 +9,7 @@ My personal portfolio website: who I am, my content accounts, and the projects I
 - **My works:** links to Itch.io and GitHub, plus project categories:
   - **Web Development:** TKHSUS
   - **Games Development:** EmMu
-  - **AI Projects:** GCI 26 HW1 (NumPy), GCI 26 HW2 (Pandas)
+  - **AI Projects:** GCI 26 HW1 (NumPy), GCI 26 HW2 (Pandas), Stack, DFS and BFS
 - **Contact:** phone and email.
 
 Clicking a category shows its project tiles. Clicking a tile opens that project's name, description, screenshots and links.
