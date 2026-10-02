@@ -37,4 +37,21 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // English <-> Arabic: every element with data-ar swaps its text.
+    const langBtn = document.getElementById('LangToggle');
+    let arabic = false;
+
+    langBtn.addEventListener('click', () => {
+        arabic = !arabic;
+
+        document.querySelectorAll('[data-ar]').forEach((el) => {
+            if (!el.dataset.en) el.dataset.en = el.textContent.trim();
+            el.textContent = arabic ? el.dataset.ar : el.dataset.en;
+        });
+
+        document.documentElement.lang = arabic ? 'ar' : 'en';
+        document.body.classList.toggle('ar', arabic);
+        langBtn.textContent = arabic ? 'EN' : 'ع';
+    });
+
 });

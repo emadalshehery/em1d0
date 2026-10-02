@@ -249,7 +249,7 @@ nav{
 
     .Skills .SkillsTitle{
         list-style: none;
-        text-align: center;
+        text-align: start;
         font-size: 3rem;
         margin-bottom: 1rem;
     }
@@ -320,6 +320,44 @@ nav{
 }
 
 
+
+/* ===================== Language button ===================== */
+
+.LangBar{
+    margin: 1rem 0 0 2rem;
+}
+
+#LangToggle{
+    color:rgb(103, 204, 171);
+    background-color: rgb(13, 36, 76);
+    font-family:'Handjet';
+    font-size:2rem;
+
+    border:none;
+    border-radius:25px;
+    padding: .2rem 1.5rem;
+
+    cursor:pointer;
+    transition: .1s ease;
+}
+#LangToggle:hover{
+    scale: 1.1;
+    box-shadow:5px 5px 20px rgb(22, 52, 103), -5px -5px 20px rgb(69, 140, 116);
+}
+#LangToggle:active{
+    scale: .9;
+}
+
+/* Arabic: right-to-left text (page layout stays the same) */
+.ar .AboutEmad,
+.ar .Skills,
+.ar .Contacts h1,
+.ar .AccountButtons a,
+.ar .PanelTitle,
+.ar .ProjectsTitle,
+.ar .ProjectDescription{
+    direction: rtl;
+}
 
 /* ===================== Collapsible Panels (JS-toggled, smooth animation) ===================== */
 
@@ -605,6 +643,7 @@ nav{
         margin: 1rem 0 0;
     }
     nav{ margin-top: 1rem; }
+    .LangBar{ margin-left: 1rem; }
 
     .Info .BGE{
         margin: 2rem 1rem 0;
@@ -666,6 +705,7 @@ nav{
 
 /* No sticky "hover" zoom on touch screens */
 @media (hover: none) {
+    #LangToggle:hover,
     .Buttons a[class]:hover,
     .AccountButtons a:hover,
     .ProjectTile:hover,

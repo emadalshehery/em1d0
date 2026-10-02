@@ -30,15 +30,15 @@
         <body >
             <header>
                     <div class="Buttons">
-                        <a class="Content" href="#ContentPanel" data-toggle="ContentPanel">
+                        <a class="Content" href="#ContentPanel" data-toggle="ContentPanel" data-ar="المحتوى">
                             Content
                         </a>
 
-                        <a class="MyWorks" href="#WorksPanel" data-toggle="WorksPanel">
+                        <a class="MyWorks" href="#WorksPanel" data-toggle="WorksPanel" data-ar="أعمالي">
                             My works
                         </a>
 
-                        <a class="Contact" href="#Contact">
+                        <a class="Contact" href="#Contact" data-ar="تواصل معي">
                             Contact
                         </a>
                     </div>
@@ -50,29 +50,33 @@
             <nav>
             </nav>
 
+            <div class="LangBar">
+                <button id="LangToggle" type="button" aria-label="Switch language">ع</button>
+            </div>
+
             <section class="BGS" >
                 
                 <div class="Info">
                     <div class="Align">
                         
                         <div class="BGE">
-                        <h2 class="Emad">Emad Alsheheri</h2>
+                        <h2 class="Emad" data-ar="عماد الشهري">Emad Alsheheri</h2>
                         
-                        <a class="IS" href="https://cs.kku.edu.sa/en/node/16">Computer Science Student</a>
+                        <a class="IS" href="https://cs.kku.edu.sa/en/node/16" data-ar="طالب علوم حاسب">Computer Science Student</a>
                         </div>
 
                         <div class="Center">
-                            <p class="AboutEmad">
+                            <p class="AboutEmad" data-ar="أنا شخص يحب علوم الحاسب والتقنية. بدأت البرمجة في عام 2020. أنا طالب في جامعة الملك خالد. اهتماماتي هي البكسل آرت، وتطوير وبرمجة المواقع، وتطوير وبرمجة الألعاب، والحاسب. لدي خبرة في لغتي بايثون وجافا.">
                                 I’m a person who loves computer science and technology. I started programming in 2020. I’m Student at King Khalid University. My interests are Pixel art, Web development & programming, Games development & programming, and Computer. I have an experience in Python and Java language.</p>
                             
                             <div SkillsBG>
                                 <ul class="Skills">
-                                    <li class="SkillsTitle">Skills</li>
-                                    <li>Game Devlopment</li>
-                                    <li>Web Devlopment</li>
-                                    <li>Programing</li>
-                                    <li>Debugging</li>
-                                    <li>Computer maintenance</li>
+                                    <li class="SkillsTitle" data-ar="المهارات">Skills</li>
+                                    <li data-ar="تطوير الألعاب">Game Devlopment</li>
+                                    <li data-ar="تطوير المواقع">Web Devlopment</li>
+                                    <li data-ar="البرمجة">Programing</li>
+                                    <li data-ar="تصحيح الأخطاء">Debugging</li>
+                                    <li data-ar="صيانة الحاسب">Computer maintenance</li>
                                 </ul>
                             </div>
 
@@ -88,22 +92,22 @@
             <section class="PanelSection">
                 <div id="ContentPanel" class="collapsible">
                     <div class="collapsible-inner">
-                        <h2 class="PanelTitle">My Content Accounts</h2>
+                        <h2 class="PanelTitle" data-ar="حسابات المحتوى الخاصة بي">My Content Accounts</h2>
 
                         <div class="AccountButtons">
                             <a class="YouTube" href="https://www.youtube.com/@em1d0_XD">
                                 <img src="youtube icon.png" alt="You Tube Icon">
-                                My Channel !
+                                <span data-ar="قناتي !">My Channel !</span>
                             </a>
 
                             <a class="IG" href="https://www.instagram.com/em1d0/?next=%2F">
                                 <img src="instagram icon.png" alt="Instagram Icon">
-                                My Instagram !
+                                <span data-ar="انستقرامي !">My Instagram !</span>
                             </a>
 
                             <a class="X" href="https://www.X.com/zgr_xdx">
                                 <img src="X icon.png" alt="X Icon">
-                                My X !
+                                <span data-ar="حسابي في X !">My X !</span>
                             </a>
                         </div>
                     </div>
@@ -114,37 +118,37 @@
             <section class="PanelSection">
                 <div id="WorksPanel" class="collapsible">
                     <div class="collapsible-inner">
-                        <h2 class="PanelTitle">My Works</h2>
+                        <h2 class="PanelTitle" data-ar="أعمالي">My Works</h2>
 
                         <div class="AccountButtons">
                             <a class="ItchIo" href="https://em1d0.itch.io/">
                                 <img src="Itch.png" alt="Itch.io Icon">
-                                My Itch.io !
+                                <span data-ar="حسابي في Itch.io !">My Itch.io !</span>
                             </a>
 
                             <a class="GitHub" href="https://github.com/emadalshehery">
                                 <img src="GitHub icon.png" alt="GitHub Icon">
-                                My GitHub !
+                                <span data-ar="حسابي في GitHub !">My GitHub !</span>
                             </a>
                         </div>
 
                         <div class="ProjectCategoryButtons">
-                            <a class="WebDev" href="#WebDevPanel" data-toggle="WebDevPanel" data-group="works-sub">
+                            <a class="WebDev" href="#WebDevPanel" data-toggle="WebDevPanel" data-group="works-sub" data-ar="تطوير المواقع">
                                 Web Development
                             </a>
 
-                            <a class="GamesDev" href="#GamesDevPanel" data-toggle="GamesDevPanel" data-group="works-sub">
+                            <a class="GamesDev" href="#GamesDevPanel" data-toggle="GamesDevPanel" data-group="works-sub" data-ar="تطوير الألعاب">
                                 Games Development
                             </a>
 
-                            <a class="AI" href="#AIPanel" data-toggle="AIPanel" data-group="works-sub">
+                            <a class="AI" href="#AIPanel" data-toggle="AIPanel" data-group="works-sub" data-ar="مشاريع الذكاء الاصطناعي">
                                 AI Projects
                             </a>
                         </div>
 
                         <div id="WebDevPanel" class="collapsible sub-collapsible" data-group="works-sub">
                             <div class="collapsible-inner">
-                                <h3 class="ProjectsTitle">Web Development Projects</h3>
+                                <h3 class="ProjectsTitle" data-ar="مشاريع تطوير المواقع">Web Development Projects</h3>
                                 <div class="ProjectsList" id="WebDevProjects">
                                     <div class="ProjectTiles">
                                         <div class="ProjectTile" data-toggle="TKHSUSInfo" data-group="webdev-projects">
@@ -157,7 +161,7 @@
                                         <div class="collapsible-inner">
                                             <div class="ProjectCard">
                                                 <h4 class="ProjectName">TKHSUS (تخصص)</h4>
-                                                <p class="ProjectDescription">
+                                                <p class="ProjectDescription" data-ar="موقع مصمم لطلاب الثانوية في السعودية، يشرح ويوضح كل تخصص أكاديمي في الجامعات السعودية، ليساعد الطلاب على فهم خياراتهم واختيار التخصص الأنسب لهم.">
                                                     A website built for high school students in Saudi Arabia. It explains and clarifies every academic major offered at Saudi universities, helping students understand their options and choose the major that fits them best.
                                                 </p>
 
@@ -168,13 +172,13 @@
                                                 </div>
 
                                                 <div class="AccountButtons ProjectLinks">
-                                                    <a class="TKHSUSSite" href="https://emadalshehery.github.io/TKHSUS/">
+                                                    <a class="TKHSUSSite" href="https://emadalshehery.github.io/TKHSUS/" data-ar="زيارة الموقع !">
                                                         Visit Website !
                                                     </a>
 
                                                     <a class="GitHub" href="https://github.com/emadalshehery/TKHSUS">
                                                         <img src="GitHub icon.png" alt="GitHub Icon">
-                                                        View Source !
+                                                        <span data-ar="عرض الكود المصدري !">View Source !</span>
                                                     </a>
                                                 </div>
                                             </div>
@@ -186,7 +190,7 @@
 
                         <div id="GamesDevPanel" class="collapsible sub-collapsible" data-group="works-sub">
                             <div class="collapsible-inner">
-                                <h3 class="ProjectsTitle">Games Development Projects</h3>
+                                <h3 class="ProjectsTitle" data-ar="مشاريع تطوير الألعاب">Games Development Projects</h3>
                                 <div class="ProjectsList" id="GamesDevProjects">
                                     <div class="ProjectTiles">
                                         <div class="ProjectTile" data-toggle="EmMuInfo" data-group="gamesdev-games">
@@ -199,7 +203,7 @@
                                         <div class="collapsible-inner">
                                             <div class="ProjectCard">
                                                 <h4 class="ProjectName">EmMu</h4>
-                                                <p class="ProjectDescription">
+                                                <p class="ProjectDescription" data-ar="لعبة منصات ثنائية الأبعاد هدفها عبور قلعة من خلال سلسلة من تحديات الباركور: تفادي الأشواك، والقفز على الجدران، وضبط توقيت القفزات الصعبة فوق الفجوات.">
                                                     A 2D platformer where the goal is to make it through a castle by pulling off a series of parkour challenges: dodging spikes, wall jumping, and timing tricky jumps across gaps.
                                                 </p>
 
@@ -212,12 +216,12 @@
                                                 <div class="AccountButtons ProjectLinks">
                                                     <a class="ItchIo" href="https://em1d0.itch.io/emmu">
                                                         <img src="Itch.png" alt="Itch.io Icon">
-                                                        Play on Itch.io !
+                                                        <span data-ar="العب على Itch.io !">Play on Itch.io !</span>
                                                     </a>
 
                                                     <a class="GitHub" href="https://github.com/emadalshehery/EmMu/">
                                                         <img src="GitHub icon.png" alt="GitHub Icon">
-                                                        View Source !
+                                                        <span data-ar="عرض الكود المصدري !">View Source !</span>
                                                     </a>
                                                 </div>
                                             </div>
@@ -229,7 +233,7 @@
 
                         <div id="AIPanel" class="collapsible sub-collapsible" data-group="works-sub">
                             <div class="collapsible-inner">
-                                <h3 class="ProjectsTitle">AI Projects</h3>
+                                <h3 class="ProjectsTitle" data-ar="مشاريع الذكاء الاصطناعي">AI Projects</h3>
                                 <div class="ProjectsList" id="AIProjects">
                                     <div class="ProjectTiles">
                                         <div class="ProjectTile" data-toggle="HW1Info" data-group="ai-projects">
@@ -265,14 +269,14 @@
                                         <div class="collapsible-inner">
                                             <div class="ProjectCard">
                                                 <h4 class="ProjectName">GCI HW1: Data Manipulation with NumPy</h4>
-                                                <p class="ProjectDescription">
+                                                <p class="ProjectDescription" data-ar="دالة تأخذ مصفوفة NumPy أحادية البعد من الأعداد الصحيحة وتُرجع فقط العناصر التي هي من مضاعفات 5 وفردية في الوقت نفسه، باستخدام قناع منطقي متجه بدون حلقات تكرار.">
                                                     A function that takes a 1D NumPy array of integers and returns only the elements that are both multiples of 5 and odd, using a vectorized boolean mask with no loops.
                                                 </p>
 
                                                 <div class="AccountButtons ProjectLinks">
                                                     <a class="GitHub" href="https://github.com/emadalshehery/GCI-26-HW1">
                                                         <img src="GitHub icon.png" alt="GitHub Icon">
-                                                        View Source !
+                                                        <span data-ar="عرض الكود المصدري !">View Source !</span>
                                                     </a>
                                                 </div>
                                             </div>
@@ -282,14 +286,14 @@
                                         <div class="collapsible-inner">
                                             <div class="ProjectCard">
                                                 <h4 class="ProjectName">GCI HW2: Cleaning Data with Pandas</h4>
-                                                <p class="ProjectDescription">
+                                                <p class="ProjectDescription" data-ar="باستخدام بيانات MyAnimeList، تحسب هذه الدالة متوسط التقييم لكل نوع من الأنمي وتُرجع النتائج مرتبة من الأعلى إلى الأدنى.">
                                                     Using the MyAnimeList dataset, this function computes the mean Score for each anime Type and returns the results sorted from highest to lowest.
                                                 </p>
 
                                                 <div class="AccountButtons ProjectLinks">
                                                     <a class="GitHub" href="https://github.com/emadalshehery/GCI-26-HW2">
                                                         <img src="GitHub icon.png" alt="GitHub Icon">
-                                                        View Source !
+                                                        <span data-ar="عرض الكود المصدري !">View Source !</span>
                                                     </a>
                                                 </div>
                                             </div>
@@ -299,14 +303,14 @@
                                         <div class="collapsible-inner">
                                             <div class="ProjectCard">
                                                 <h4 class="ProjectName">Stack (Interactive Menu)</h4>
-                                                <p class="ProjectDescription">
+                                                <p class="ProjectDescription" data-ar="مكدس (LIFO) مبني بلغة بايثون باستخدام قائمة ويُتحكم به عبر قائمة نصية: إضافة عدد صحيح، أو إزالة العنصر العلوي، أو إنهاء البرنامج.">
                                                     A stack (LIFO) implemented in Python with a list and controlled through a text menu: push an integer, pop the top element, or end the program.
                                                 </p>
 
                                                 <div class="AccountButtons ProjectLinks">
                                                     <a class="GitHub" href="https://github.com/emadalshehery/Stack">
                                                         <img src="GitHub icon.png" alt="GitHub Icon">
-                                                        View Source !
+                                                        <span data-ar="عرض الكود المصدري !">View Source !</span>
                                                     </a>
                                                 </div>
                                             </div>
@@ -316,14 +320,14 @@
                                         <div class="collapsible-inner">
                                             <div class="ProjectCard">
                                                 <h4 class="ProjectName">DFS and BFS</h4>
-                                                <p class="ProjectDescription">
+                                                <p class="ProjectDescription" data-ar="خوارزميتان لاجتياز الرسوم البيانية بلغة بايثون: البحث بالعرض أولاً (باستخدام طابور) والبحث بالعمق أولاً (بشكل تكراري ذاتي)، وتُطبَّقان على الشجرة نفسها لمقارنة ترتيب الزيارة.">
                                                     Two graph traversal algorithms in Python, breadth-first search (using a queue) and depth-first search (recursive), run on the same example tree to compare the visiting order.
                                                 </p>
 
                                                 <div class="AccountButtons ProjectLinks">
                                                     <a class="GitHub" href="https://github.com/emadalshehery/DFS-and-BFS">
                                                         <img src="GitHub icon.png" alt="GitHub Icon">
-                                                        View Source !
+                                                        <span data-ar="عرض الكود المصدري !">View Source !</span>
                                                     </a>
                                                 </div>
                                             </div>
@@ -333,14 +337,14 @@
                                         <div class="collapsible-inner">
                                             <div class="ProjectCard">
                                                 <h4 class="ProjectName">PyTorch Tensors and Tabular Data Prep</h4>
-                                                <p class="ProjectDescription">
+                                                <p class="ProjectDescription" data-ar="مقدمة في تنسورات PyTorch (الإنشاء، والنقل إلى وحدة GPU، وإعادة التشكيل) متبوعة بمسار كامل لتجهيز بيانات أسعار المنازل: معالجة القيم المفقودة، والترميز، والتحجيم، وإزالة القيم الشاذة، والتقسيم، وبناء DataLoaders.">
                                                     An introduction to PyTorch tensors (creating, moving to GPU, reshaping) followed by a full data-preparation pipeline for the House Prices dataset: handling missing values, encoding, scaling, removing outliers, splitting, and building DataLoaders.
                                                 </p>
 
                                                 <div class="AccountButtons ProjectLinks">
                                                     <a class="GitHub" href="https://github.com/emadalshehery/PyTorch-Tensors-and-Tabular-Data-Prep">
                                                         <img src="GitHub icon.png" alt="GitHub Icon">
-                                                        View Source !
+                                                        <span data-ar="عرض الكود المصدري !">View Source !</span>
                                                     </a>
                                                 </div>
                                             </div>
@@ -350,14 +354,14 @@
                                         <div class="collapsible-inner">
                                             <div class="ProjectCard">
                                                 <h4 class="ProjectName">House Price Regression with a Neural Network</h4>
-                                                <p class="ProjectDescription">
+                                                <p class="ProjectDescription" data-ar="شبكة عصبية متصلة بالكامل مبنية ومدرَّبة باستخدام PyTorch للتنبؤ بأسعار المنازل، مع منحنيات خسارة التدريب والتحقق ورسم يقارن الأسعار المتوقعة بالفعلية.">
                                                     A fully connected neural network built and trained in PyTorch to predict house prices, with training and validation loss curves and a plot of predicted vs actual prices.
                                                 </p>
 
                                                 <div class="AccountButtons ProjectLinks">
                                                     <a class="GitHub" href="https://github.com/emadalshehery/House-Price-Regression-with-a-Neural-Network">
                                                         <img src="GitHub icon.png" alt="GitHub Icon">
-                                                        View Source !
+                                                        <span data-ar="عرض الكود المصدري !">View Source !</span>
                                                     </a>
                                                 </div>
                                             </div>
@@ -367,14 +371,14 @@
                                         <div class="collapsible-inner">
                                             <div class="ProjectCard">
                                                 <h4 class="ProjectName">MNIST Handwritten Digit Classifier</h4>
-                                                <p class="ProjectDescription">
+                                                <p class="ProjectDescription" data-ar="مصنِّف صور مبني بـ PyTorch يتعرف على الأرقام المكتوبة بخط اليد من مجموعة MNIST باستخدام شبكة عصبية متصلة بالكامل، ويصل إلى دقة تقارب 95.7% بعد 5 دورات تدريب.">
                                                     An image classifier built in PyTorch that recognizes handwritten digits from the MNIST dataset using a fully connected neural network, reaching about 95.7% accuracy after 5 epochs.
                                                 </p>
 
                                                 <div class="AccountButtons ProjectLinks">
                                                     <a class="GitHub" href="https://github.com/emadalshehery/MNIST-Handwritten-Digit-Classifier">
                                                         <img src="GitHub icon.png" alt="GitHub Icon">
-                                                        View Source !
+                                                        <span data-ar="عرض الكود المصدري !">View Source !</span>
                                                     </a>
                                                 </div>
                                             </div>
@@ -392,7 +396,7 @@
                 <footer class="Info">
                     <div class="Contacts" id="Contact">
                             <div class="MyNumber">
-                                <h1>
+                                <h1 data-ar="رقمي :">
                                     My Number :
                                 </h1>
 
@@ -400,7 +404,7 @@
                             </div>
 
                             <div class="MyEmail">
-                                <h1>
+                                <h1 data-ar="بريدي الإلكتروني :">
                                     My Email :
                                 </h1>
 
