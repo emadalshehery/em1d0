@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handjet&display=swap');
 
 *{
     scroll-behavior: smooth;
@@ -36,7 +36,7 @@ header{
     .Content{
         color:rgb(103, 204, 171);
         background-color:rgb(3, 21, 51);
-        font-family:'Jersey 10';
+        font-family:'Handjet';
         font-size :2rem;
 
         border:1rem;
@@ -64,7 +64,7 @@ header{
     .MyWorks{
         color:rgb(103, 204, 171);
         background-color:rgb(3, 21, 51);
-        font-family:'Jersey 10';
+        font-family:'Handjet';
         font-size :2rem;
 
         border:1rem;
@@ -92,7 +92,7 @@ header{
     .Contact{
         color:rgb(103, 204, 171);
         background-color:rgb(3, 21, 51);
-        font-family:'Jersey 10';
+        font-family:'Handjet';
         font-size :2rem;
 
         border:1rem;
@@ -173,7 +173,7 @@ nav{
         text-align: center;
         
         color:rgb(103, 204, 171);
-        font-family:'Jersey 10';
+        font-family:'Handjet';
         font-size:4rem;
         
     }
@@ -183,7 +183,7 @@ nav{
         text-align: center;
 
         color: rgb(69, 140, 116);
-        font-family: 'Jersey 10';
+        font-family: 'Handjet';
         font-size:2rem;
 
         text-decoration: none;
@@ -217,7 +217,7 @@ nav{
         background-color:rgb(13, 36, 76);
 
         color: rgb(103, 204, 171);
-        font-family: 'Jersey 10';
+        font-family: 'Handjet';
         font-size: 2rem;
     }
 
@@ -243,8 +243,15 @@ nav{
         
 
         color: rgb(103, 204, 171);
-        font-family: 'Jersey 10';
+        font-family: 'Handjet';
         font-size: 2rem;
+    }
+
+    .Skills .SkillsTitle{
+        list-style: none;
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 1rem;
     }
 
     .Contacts{
@@ -264,7 +271,7 @@ nav{
             margin: 2rem;
 
             color:rgb(103, 204, 171);
-            font-family:'Jersey 10';
+            font-family:'Handjet';
             font-size:1rem;
 
             .TheNumber{
@@ -289,7 +296,7 @@ nav{
             margin: 2rem;
             
             color:rgb(103, 204, 171);
-            font-family:'Jersey 10';
+            font-family:'Handjet';
             font-size:1rem;
 
             .TheEmail{
@@ -359,14 +366,14 @@ nav{
 
 .PanelTitle{
     color:rgb(103, 204, 171);
-    font-family:'Jersey 10';
+    font-family:'Handjet';
     font-size:3rem;
     margin-bottom: 1.5rem;
 }
 
 .ProjectsTitle{
     color:rgb(103, 204, 171);
-    font-family:'Jersey 10';
+    font-family:'Handjet';
     font-size:2rem;
     margin-bottom: 1rem;
 }
@@ -388,7 +395,7 @@ nav{
     background-color: rgb(13, 36, 76);
     text-decoration:none;
 
-    font-family:'Jersey 10';
+    font-family:'Handjet';
     font-size:1.5rem;
 
     border:1rem;
@@ -432,7 +439,7 @@ nav{
     text-decoration:none;
     text-align:center;
 
-    font-family:'Jersey 10';
+    font-family:'Handjet';
     font-size:1.8rem;
 
     border-radius:25px;
@@ -455,7 +462,7 @@ nav{
 
 .ProjectsList{
     color:rgb(103, 204, 171);
-    font-family:'Jersey 10';
+    font-family:'Handjet';
     font-size:1.5rem;
 
     background-color: rgb(13, 36, 76);
@@ -478,14 +485,14 @@ nav{
 
 .ProjectName{
     color:rgb(103, 204, 171);
-    font-family:'Jersey 10';
+    font-family:'Handjet';
     font-size:2.5rem;
     margin-bottom: .5rem;
 }
 
 .ProjectDescription{
     color:rgb(103, 204, 171);
-    font-family:'Jersey 10';
+    font-family:'Handjet';
     font-size:1.3rem;
     opacity:.85;
 
@@ -571,7 +578,7 @@ nav{
 
 .ProjectTileName{
     color:rgb(103, 204, 171);
-    font-family:'Jersey 10';
+    font-family:'Handjet';
     font-size:2rem;
 }
 
@@ -614,6 +621,7 @@ nav{
         font-size: 1.4rem;
     }
     .Info .Skills{ padding-bottom: 0; }
+    .Info .Skills .SkillsTitle{ font-size: 2.2rem; }
 
     .Info .Contacts{ margin: 2rem 1rem; }
     .Info .Contacts .MyNumber,
