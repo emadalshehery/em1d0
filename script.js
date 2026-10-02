@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         document.documentElement.lang = arabic ? 'ar' : 'en';
-        document.body.classList.toggle('ar', arabic);
+        document.documentElement.dir = arabic ? 'rtl' : 'ltr';
         langBtn.textContent = arabic ? 'EN' : 'ع';
     });
 
