@@ -6,21 +6,21 @@ My personal portfolio website: who I am, my content accounts, and the projects I
 
 - **About:** short intro, interests and skills.
 - **Content:** links to my YouTube, Instagram and X.
-- **My works:** links to Itch.io and GitHub, plus project categories:
+- **My works:** links to Itch.io, GitHub and LinkedIn, plus project categories:
   - **Web Development:** TKHSUS
   - **Games Development:** EmMu
   - **AI Projects:** GCI 26 HW1 (NumPy), GCI 26 HW2 (Pandas), Stack, DFS and BFS, PyTorch Tensors, House Price NN, MNIST Classifier
 - **Contact:** phone and email.
 
-Clicking a category shows its project tiles. Clicking a tile opens that project's name, description, screenshots and links.
+Clicking a category shows its project tiles. Clicking a tile opens a card with the project's name, a short description, the skills used, and its links.
 
 ## Files
 
 ```
 index.html   page structure and content
 style.css    styling, animations and mobile layout
-script.js    open/close logic for the collapsible panels
-images/      project icons and screenshots
+script.js    open/close logic for the panels and the English/Arabic switch
+images/      project icons
 ```
 
 ## Run locally
@@ -44,9 +44,13 @@ Open `index.html` in a browser. No build step or install needed.
        <div class="collapsible-inner">
            <div class="ProjectCard">
                <h4 class="ProjectName">My Project</h4>
-               <p class="ProjectDescription">What it does.</p>
-               <div class="AccountButtons ProjectLinks">
-                   <a class="GitHub" href="https://github.com/...">View Source !</a>
+               <p class="ProjectDescription" data-ar="الوصف بالعربية">Short description.</p>
+               <ul class="SkillTags">
+                   <li>Python</li>
+                   <li>PyTorch</li>
+               </ul>
+               <div class="ProjectLinks">
+                   <a href="https://github.com/..." data-ar="عرض الكود المصدري">View Source</a>
                </div>
            </div>
        </div>
@@ -54,6 +58,10 @@ Open `index.html` in a browser. No build step or install needed.
    ```
 
 Use the same `data-group` value for all projects in one category, so only one card is open at a time. The `data-toggle` on the tile must match the card's `id`.
+
+## Language
+
+The "ع" button switches the site between English and Arabic (and flips the layout right-to-left). Any element with a `data-ar` attribute is swapped to that text, so add `data-ar="..."` to new content you want translated.
 
 ## Deploy
 
