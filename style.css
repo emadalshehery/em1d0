@@ -713,3 +713,45 @@ nav{
         box-shadow: none;
     }
 }
+}
+
+/* ===================== Project grid: always-visible square cards ===================== */
+.ProjectGrid{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 360px), 360px));
+    justify-content:center;
+    gap:1.5rem;
+}
+
+.ProjectGrid .ProjectCard{
+    aspect-ratio: 1 / 1;
+    display:flex;
+    flex-direction:column;
+    overflow-y:auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(69, 140, 116) transparent;
+    padding: 1.25rem;
+}
+
+.ProjectGrid .ProjectCard .ProjectIcon{
+    width:48px;
+    height:48px;
+    max-width:48px;
+    margin-bottom:.5rem;
+    flex-shrink:0;
+}
+
+.ProjectGrid .ProjectName{ font-size:1.9rem; line-height:1; }
+.ProjectGrid .ProjectDescription{ font-size:1.15rem; line-height:1.1; margin-bottom:.75rem; }
+.ProjectGrid .SkillTags{ gap:.4rem; margin-bottom:.75rem; }
+.ProjectGrid .SkillTags li{ font-size:1rem; padding:.1rem .8rem; }
+.ProjectGrid .ProjectLinks{ gap:.5rem 1.25rem; margin-top:auto; }
+.ProjectGrid .ProjectLinks a{ font-size:1.4rem; }
+
+@media (max-width: 1023px){
+    .ProjectGrid{ gap:1rem; }
+    .ProjectGrid .ProjectCard{ padding:1rem; }
+    .ProjectGrid .ProjectName{ font-size:1.6rem; }
+    .ProjectGrid .ProjectDescription{ font-size:1.05rem; }
+    .ProjectGrid .ProjectLinks a{ font-size:1.25rem; }
+}
