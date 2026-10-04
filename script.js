@@ -37,42 +37,21 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // ===================== English / Arabic switch =====================
+    // English <-> Arabic: every element with data-ar swaps its text.
     const langBtn = document.getElementById('LangToggle');
-    const translatable = document.querySelectorAll('[data-ar]');
+    let arabic = false;
 
-    // Remember the original English text so we can switch back.
-    translatable.forEach((el) => {
-        el.setAttribute('data-en', el.textContent.trim());
+    langBtn.addEventListener('click', () => {
+        arabic = !arabic;
+
+        document.querySelectorAll('[data-ar]').forEach((el) => {
+            if (!el.dataset.en) el.dataset.en = el.textContent.trim();
+            el.textContent = arabic ? el.dataset.ar : el.dataset.en;
+        });
+
+        document.documentElement.lang = arabic ? 'ar' : 'en';
+        document.documentElement.dir = arabic ? 'rtl' : 'ltr';
+        langBtn.textContent = arabic ? 'EN' : 'ع';
     });
-
-    function setLanguage(lang) {
-        const isArabic = lang === 'ar';
-
-        translatable.forEach((el) => {
-            el.textContent = isArabic
-                ? el.getAttribute('data-ar')
-                : el.getAttribute('data-en');
-        });
-
-        document.documentElement.lang = isArabic ? 'ar' : 'en';
-        document.documentElement.dir = isArabic ? 'rtl' : 'ltr';
-
-        // The button shows the language you can switch TO.
-        if (langBtn) langBtn.textContent = isArabic ? 'EN' : 'ع';
-
-        try { localStorage.setItem('lang', lang); } catch (e) {}
-    }
-
-    if (langBtn) {
-        langBtn.addEventListener('click', () => {
-            setLanguage(document.documentElement.lang === 'ar' ? 'en' : 'ar');
-        });
-    }
-
-    // Restore the visitor's last choice.
-    let saved = null;
-    try { saved = localStorage.getItem('lang'); } catch (e) {}
-    if (saved === 'ar') setLanguage('ar');
 
 });
