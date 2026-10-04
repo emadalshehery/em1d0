@@ -442,6 +442,7 @@ nav{
     transition: .1s ease;
 }
 
+.AccountButtons a svg,
 .AccountButtons a img{
     width:1.5rem;
     height:1.5rem;
@@ -514,7 +515,12 @@ nav{
 }
 
 .ProjectCard{
-    text-align:center;
+    text-align:start;
+
+    background-color: rgb(3, 21, 51);
+    border: 2px solid rgb(69, 140, 116);
+    border-radius:25px;
+    padding: 2rem;
 }
 
 .ProjectName{
@@ -530,40 +536,43 @@ nav{
     font-size:1.3rem;
     opacity:.85;
 
-    max-width: 900px;
-    margin: 0 auto 1.5rem auto;
-}
-
-.ProjectGallery{
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap:1rem;
-
-    width: 100%;
-    box-sizing: border-box;
     margin-bottom: 1.5rem;
 }
 
-.ProjectGallery img{
-    display:block;
-    width:100%;
-    height:auto;
-    max-width:100%;
-
-    border-radius:15px;
-    border: 4px solid rgb(3, 21, 51);
-
-    transition: .15s ease;
+.SkillTags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:.75rem;
+    list-style:none;
+    margin-bottom: 1.5rem;
 }
 
-.ProjectGallery img:hover{
-    scale: 1.05;
-    box-shadow:5px 5px 20px rgb(22, 52, 103), -5px -5px 20px rgb(69, 140, 116);
+.SkillTags li{
+    color:rgb(103, 204, 171);
+    background-color: rgb(13, 36, 76);
+    font-size:1.3rem;
+
+    border: 2px solid rgb(69, 140, 116);
+    border-radius:999px;
+    padding: .2rem 1.1rem;
 }
 
 .ProjectLinks{
-    margin-top: 0;
+    display:flex;
+    flex-wrap:wrap;
+    gap:1.5rem;
 }
+
+.ProjectLinks a{
+    color:rgb(103, 204, 171);
+    text-decoration:none;
+    font-size:1.8rem;
+    transition: .1s ease;
+}
+.ProjectLinks a::after{ content:" →"; }
+[dir="rtl"] .ProjectLinks a::after{ content:" ←"; }
+.ProjectLinks a:hover{ text-decoration:underline; }
+.ProjectLinks a:active{ opacity:.7; }
 
 /* Small clickable tile (icon + name); click reveals the game's info panel */
 .ProjectTiles{
@@ -688,24 +697,17 @@ nav{
         padding: 1rem 1.5rem;
     }
     .ProjectsList{ font-size: 1.2rem; padding: 1rem; }
+    .ProjectCard{ padding: 1.25rem; }
     .ProjectName{ font-size: 1.8rem; }
+    .SkillTags li{ font-size: 1.1rem; }
+    .ProjectLinks a{ font-size: 1.5rem; }
     .ProjectDescription{ font-size: 1.1rem; }
-    .ProjectGallery{ grid-template-columns: 1fr; }
-    .ProjectTileName{ font-size: 1.5rem; }
-    .ProjectIcon{
-        width: 56px;
-        height: 56px;
-        max-width: 56px;
-    }
-}
-
-/* No sticky "hover" zoom on touch screens */
+    /* No sticky "hover" zoom on touch screens */
 @media (hover: none) {
     #LangToggle:hover,
     .Buttons a[class]:hover,
     .AccountButtons a:hover,
     .ProjectTile:hover,
-    .ProjectGallery img:hover,
     .Info .IS:hover{
         scale: 1;
         box-shadow: none;
