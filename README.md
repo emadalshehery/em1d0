@@ -12,7 +12,7 @@ My personal portfolio website: who I am, my content accounts, and the projects I
   - **AI Projects:** GCI 26 HW1 (NumPy), GCI 26 HW2 (Pandas), Stack, DFS and BFS, PyTorch Tensors, House Price NN, MNIST Classifier
 - **Contact:** phone and email.
 
-Clicking a category shows its project tiles. Clicking a tile opens a card with the project's name, a short description, the skills used, and its links.
+Clicking a category shows all of its projects at once as square cards. Each card has the project's name, a short description, the skills used, and its links.
 
 ## Files
 
@@ -29,35 +29,24 @@ Open `index.html` in a browser. No build step or install needed.
 
 ## Add a project
 
-1. Inside the category panel in `index.html` (`WebDevPanel`, `GamesDevPanel` or `AIPanel`), add a tile:
+Inside the category's `<div class="ProjectGrid">` in `index.html` (`WebDevProjects`, `GamesDevProjects` or `AIProjects`), add a card:
 
-   ```html
-   <div class="ProjectTile" data-toggle="MyProjectInfo" data-group="my-group">
-       <span class="ProjectTileName">My Project</span>
-   </div>
-   ```
+```html
+<div class="ProjectCard" id="MyProjectInfo">
+    <img class="ProjectIcon" src="images/my-icon.png" alt="My Project icon"> <!-- optional -->
+    <h4 class="ProjectName">My Project</h4>
+    <p class="ProjectDescription" data-ar="الوصف بالعربية">Short description.</p>
+    <ul class="SkillTags">
+        <li>Python</li>
+        <li>PyTorch</li>
+    </ul>
+    <div class="ProjectLinks">
+        <a href="https://github.com/..." data-ar="عرض الكود المصدري">View Source</a>
+    </div>
+</div>
+```
 
-2. Below the tiles, add its info card with a matching `id`:
-
-   ```html
-   <div id="MyProjectInfo" class="collapsible sub-collapsible" data-group="my-group">
-       <div class="collapsible-inner">
-           <div class="ProjectCard">
-               <h4 class="ProjectName">My Project</h4>
-               <p class="ProjectDescription" data-ar="الوصف بالعربية">Short description.</p>
-               <ul class="SkillTags">
-                   <li>Python</li>
-                   <li>PyTorch</li>
-               </ul>
-               <div class="ProjectLinks">
-                   <a href="https://github.com/..." data-ar="عرض الكود المصدري">View Source</a>
-               </div>
-           </div>
-       </div>
-   </div>
-   ```
-
-Use the same `data-group` value for all projects in one category, so only one card is open at a time. The `data-toggle` on the tile must match the card's `id`.
+Cards are always visible and sized as squares by `.ProjectGrid .ProjectCard` in `style.css`.
 
 ## Language
 
