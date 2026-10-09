@@ -137,34 +137,14 @@
                             </a>
                         </div>
 
-                        <div class="ProjectCategoryButtons">
-                            <a class="WebDev" href="#WebDevPanel" data-toggle="WebDevPanel" data-group="works-sub" data-ar="تطوير المواقع">
-                                Web Development
-                            </a>
-
-                            <a class="GamesDev" href="#GamesDevPanel" data-toggle="GamesDevPanel" data-group="works-sub" data-ar="تطوير الألعاب">
-                                Games Development
-                            </a>
-
-                            <a class="AI" href="#AIPanel" data-toggle="AIPanel" data-group="works-sub" data-ar="مشاريع الذكاء الاصطناعي">
-                                AI Projects
-                            </a>
-                        </div>
-
-                        <div id="WebDevPanel" class="collapsible sub-collapsible" data-group="works-sub">
+<div id="WebDevPanel" class="collapsible sub-collapsible open">
                             <div class="collapsible-inner">
                                 <h3 class="ProjectsTitle" data-ar="مشاريع تطوير المواقع">Web Development Projects</h3>
                                 <div class="ProjectsList" id="WebDevProjects">
-                                    <div class="ProjectTiles">
-                                        <div class="ProjectTile" data-toggle="TKHSUSInfo" data-group="webdev-projects">
-                                            <img class="ProjectIcon" src="images/tkhsus-icon.png" alt="TKHSUS icon">
-                                            <span class="ProjectTileName">TKHSUS</span>
-                                        </div>
-                                    </div>
+                                    <div class="ProjectGrid">
+<div class="ProjectCard" id="TKHSUSInfo">
+<img class="ProjectIcon" src="images/tkhsus-icon.png" alt="TKHSUS icon">
 
-                                    <div id="TKHSUSInfo" class="collapsible sub-collapsible" data-group="webdev-projects">
-                                        <div class="collapsible-inner">
-                                            <div class="ProjectCard">
                                                 <h4 class="ProjectName">TKHSUS (تخصص)</h4>
                                                 <p class="ProjectDescription" data-ar="موقع يساعد طلاب الثانوية في السعودية على استكشاف كل التخصصات الجامعية واختيار الأنسب لهم.">A website that helps Saudi high school students explore every university major and choose the one that fits them best.</p>
                                                 <ul class="SkillTags">
@@ -176,27 +156,20 @@
                                                 <a href="https://emadalshehery.github.io/TKHSUS/" data-ar="زيارة الموقع">Visit Website</a>
                                                 <a href="https://github.com/emadalshehery/TKHSUS" data-ar="عرض الكود المصدري">View Source</a>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
+</div>
+</div>
                                 </div>
                             </div>
                         </div>
 
-                        <div id="GamesDevPanel" class="collapsible sub-collapsible" data-group="works-sub">
+                        <div id="GamesDevPanel" class="collapsible sub-collapsible open">
                             <div class="collapsible-inner">
                                 <h3 class="ProjectsTitle" data-ar="مشاريع تطوير الألعاب">Games Development Projects</h3>
                                 <div class="ProjectsList" id="GamesDevProjects">
-                                    <div class="ProjectTiles">
-                                        <div class="ProjectTile" data-toggle="EmMuInfo" data-group="gamesdev-games">
-                                            <img class="ProjectIcon pixel-icon" src="images/emmu-icon.png" alt="EmMu icon">
-                                            <span class="ProjectTileName">EmMu</span>
-                                        </div>
-                                    </div>
+                                    <div class="ProjectGrid">
+<div class="ProjectCard" id="EmMuInfo">
+<img class="ProjectIcon pixel-icon" src="images/emmu-icon.png" alt="EmMu icon">
 
-                                    <div id="EmMuInfo" class="collapsible sub-collapsible" data-group="gamesdev-games">
-                                        <div class="collapsible-inner">
-                                            <div class="ProjectCard">
                                                 <h4 class="ProjectName">EmMu</h4>
                                                 <p class="ProjectDescription" data-ar="لعبة منصات ثنائية الأبعاد تعبر فيها قلعة بتفادي الأشواك والقفز على الجدران وضبط القفزات الصعبة.">A 2D platformer where you get through a castle by dodging spikes, wall jumping, and timing tricky jumps.</p>
                                                 <ul class="SkillTags">
@@ -208,58 +181,19 @@
                                                 <a href="https://em1d0.itch.io/emmu" data-ar="العب على Itch.io">Play on Itch.io</a>
                                                 <a href="https://github.com/emadalshehery/EmMu/" data-ar="عرض الكود المصدري">View Source</a>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
+</div>
+</div>
                                 </div>
                             </div>
                         </div>
 
-                        <div id="AIPanel" class="collapsible sub-collapsible" data-group="works-sub">
+                        <div id="AIPanel" class="collapsible sub-collapsible open">
                             <div class="collapsible-inner">
                                 <h3 class="ProjectsTitle" data-ar="مشاريع الذكاء الاصطناعي">AI Projects</h3>
                                 <div class="ProjectsList" id="AIProjects">
-                                    <div class="ProjectTiles">
-                                        <div class="ProjectTile" data-toggle="HW1Info" data-group="ai-projects">
-                                            <span class="ProjectTileName">GCI 26 HW1</span>
-                                        </div>
+                                    <div class="ProjectGrid">
+<div class="ProjectCard" id="HW1Info">
 
-                                        <div class="ProjectTile" data-toggle="HW2Info" data-group="ai-projects">
-                                            <span class="ProjectTileName">GCI 26 HW2</span>
-                                        </div>
-
-                                        <div class="ProjectTile" data-toggle="StackInfo" data-group="ai-projects">
-                                            <span class="ProjectTileName">Stack</span>
-                                        </div>
-
-                                        <div class="ProjectTile" data-toggle="DFSBFSInfo" data-group="ai-projects">
-                                            <span class="ProjectTileName">DFS and BFS</span>
-                                        </div>
-
-                                        <div class="ProjectTile" data-toggle="TensorsInfo" data-group="ai-projects">
-                                            <span class="ProjectTileName">PyTorch Tensors</span>
-                                        </div>
-
-                                        <div class="ProjectTile" data-toggle="HousePriceInfo" data-group="ai-projects">
-                                            <span class="ProjectTileName">House Price NN</span>
-                                        </div>
-
-                                        <div class="ProjectTile" data-toggle="MNISTInfo" data-group="ai-projects">
-                                            <span class="ProjectTileName">MNIST Classifier</span>
-                                        </div>
-
-                                        <div class="ProjectTile" data-toggle="HW3Info" data-group="ai-projects">
-                                            <span class="ProjectTileName">GCI 26 HW3</span>
-                                        </div>
-
-                                        <div class="ProjectTile" data-toggle="PhotoGenInfo" data-group="ai-projects">
-                                            <span class="ProjectTileName">AI Photo Generator</span>
-                                        </div>
-                                    </div>
-
-                                    <div id="HW1Info" class="collapsible sub-collapsible" data-group="ai-projects">
-                                        <div class="collapsible-inner">
-                                            <div class="ProjectCard">
                                                 <h4 class="ProjectName">GCI HW1: Data Manipulation with NumPy</h4>
                                                 <p class="ProjectDescription" data-ar="تُرجع عناصر مصفوفة NumPy التي هي من مضاعفات 5 وفردية، باستخدام قناع منطقي متجه.">Returns the elements of a NumPy array that are multiples of 5 and odd, using a vectorized boolean mask.</p>
                                                 <ul class="SkillTags">
@@ -269,12 +203,9 @@
                                                 <div class="ProjectLinks">
                                                 <a href="https://github.com/emadalshehery/GCI-26-HW1" data-ar="عرض الكود المصدري">View Source</a>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="HW2Info" class="collapsible sub-collapsible" data-group="ai-projects">
-                                        <div class="collapsible-inner">
-                                            <div class="ProjectCard">
+</div>
+                                    <div class="ProjectCard" id="HW2Info">
+
                                                 <h4 class="ProjectName">GCI HW2: Cleaning Data with Pandas</h4>
                                                 <p class="ProjectDescription" data-ar="تحسب متوسط التقييم لكل نوع أنمي في بيانات MyAnimeList مرتبًا من الأعلى إلى الأدنى.">Computes the mean score for each anime type in the MyAnimeList dataset, sorted from highest to lowest.</p>
                                                 <ul class="SkillTags">
@@ -285,12 +216,9 @@
                                                 <div class="ProjectLinks">
                                                 <a href="https://github.com/emadalshehery/GCI-26-HW2" data-ar="عرض الكود المصدري">View Source</a>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="StackInfo" class="collapsible sub-collapsible" data-group="ai-projects">
-                                        <div class="collapsible-inner">
-                                            <div class="ProjectCard">
+</div>
+                                    <div class="ProjectCard" id="StackInfo">
+
                                                 <h4 class="ProjectName">Stack (Interactive Menu)</h4>
                                                 <p class="ProjectDescription" data-ar="مكدس (LIFO) بلغة بايثون يُتحكم به عبر قائمة نصية: إضافة، إزالة، أو خروج.">A Python stack (LIFO) controlled through a text menu: push, pop, or quit.</p>
                                                 <ul class="SkillTags">
@@ -300,12 +228,9 @@
                                                 <div class="ProjectLinks">
                                                 <a href="https://github.com/emadalshehery/Stack" data-ar="عرض الكود المصدري">View Source</a>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="DFSBFSInfo" class="collapsible sub-collapsible" data-group="ai-projects">
-                                        <div class="collapsible-inner">
-                                            <div class="ProjectCard">
+</div>
+                                    <div class="ProjectCard" id="DFSBFSInfo">
+
                                                 <h4 class="ProjectName">DFS and BFS</h4>
                                                 <p class="ProjectDescription" data-ar="اجتياز الرسوم البيانية بالعرض أولاً وبالعمق أولاً بلغة بايثون، مع مقارنتهما على الشجرة نفسها.">Breadth-first and depth-first graph traversal in Python, compared on the same example tree.</p>
                                                 <ul class="SkillTags">
@@ -315,12 +240,9 @@
                                                 <div class="ProjectLinks">
                                                 <a href="https://github.com/emadalshehery/DFS-and-BFS" data-ar="عرض الكود المصدري">View Source</a>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="TensorsInfo" class="collapsible sub-collapsible" data-group="ai-projects">
-                                        <div class="collapsible-inner">
-                                            <div class="ProjectCard">
+</div>
+                                    <div class="ProjectCard" id="TensorsInfo">
+
                                                 <h4 class="ProjectName">PyTorch Tensors and Tabular Data Prep</h4>
                                                 <p class="ProjectDescription" data-ar="أساسيات تنسورات PyTorch ومسار كامل لتجهيز بيانات أسعار المنازل.">PyTorch tensor basics and a full data-preparation pipeline for the House Prices dataset.</p>
                                                 <ul class="SkillTags">
@@ -331,12 +253,9 @@
                                                 <div class="ProjectLinks">
                                                 <a href="https://github.com/emadalshehery/PyTorch-Tensors-and-Tabular-Data-Prep" data-ar="عرض الكود المصدري">View Source</a>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="HousePriceInfo" class="collapsible sub-collapsible" data-group="ai-projects">
-                                        <div class="collapsible-inner">
-                                            <div class="ProjectCard">
+</div>
+                                    <div class="ProjectCard" id="HousePriceInfo">
+
                                                 <h4 class="ProjectName">House Price Regression with a Neural Network</h4>
                                                 <p class="ProjectDescription" data-ar="شبكة عصبية بـ PyTorch تتنبأ بأسعار المنازل، مع منحنيات الخسارة ورسم يقارن المتوقع بالفعلي.">A PyTorch neural network that predicts house prices, with loss curves and a predicted vs actual plot.</p>
                                                 <ul class="SkillTags">
@@ -347,12 +266,9 @@
                                                 <div class="ProjectLinks">
                                                 <a href="https://github.com/emadalshehery/House-Price-Regression-with-a-Neural-Network" data-ar="عرض الكود المصدري">View Source</a>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="MNISTInfo" class="collapsible sub-collapsible" data-group="ai-projects">
-                                        <div class="collapsible-inner">
-                                            <div class="ProjectCard">
+</div>
+                                    <div class="ProjectCard" id="MNISTInfo">
+
                                                 <h4 class="ProjectName">MNIST Handwritten Digit Classifier</h4>
                                                 <p class="ProjectDescription" data-ar="شبكة عصبية بـ PyTorch تتعرف على الأرقام المكتوبة بخط اليد بدقة تقارب 95.7%.">A PyTorch neural network that recognizes handwritten digits, reaching about 95.7% accuracy.</p>
                                                 <ul class="SkillTags">
@@ -363,13 +279,10 @@
                                                 <div class="ProjectLinks">
                                                 <a href="https://github.com/emadalshehery/MNIST-Handwritten-Digit-Classifier" data-ar="عرض الكود المصدري">View Source</a>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
+</div>
 
-                                    <div id="HW3Info" class="collapsible sub-collapsible" data-group="ai-projects">
-                                        <div class="collapsible-inner">
-                                            <div class="ProjectCard">
+                                    <div class="ProjectCard" id="HW3Info">
+
                                                 <h4 class="ProjectName">GCI HW3: Visualizing Data with Matplotlib</h4>
                                                 <p class="ProjectDescription" data-ar="تحليل باريتو (العُشيرات) على بيانات MyAnimeList: ترتيب الأنمي وتقسيمه إلى مجموعات وحساب حصة كل مجموعة من الإجمالي.">Pareto (decile) analysis on the MyAnimeList dataset: ranks anime, splits them into groups, and finds each group's share of the total.</p>
                                                 <ul class="SkillTags">
@@ -380,13 +293,10 @@
                                                 <div class="ProjectLinks">
                                                     <a href="https://github.com/emadalshehery/GCI-26-HW3" data-ar="عرض الكود المصدري">View Source</a>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
+</div>
 
-                                    <div id="PhotoGenInfo" class="collapsible sub-collapsible" data-group="ai-projects">
-                                        <div class="collapsible-inner">
-                                            <div class="ProjectCard">
+                                    <div class="ProjectCard" id="PhotoGenInfo">
+
                                                 <h4 class="ProjectName">AI Photo Generator</h4>
                                                 <p class="ProjectDescription" data-ar="توليد وتعديل الصور باستخدام Stable Diffusion: من النص إلى صورة، ومن صورة إلى صورة، وتعبئة المناطق المحددة.">Generates and edits images with Stable Diffusion: text-to-image, image-to-image, and in-painting.</p>
                                                 <ul class="SkillTags">
@@ -397,9 +307,8 @@
                                                 <div class="ProjectLinks">
                                                     <a href="https://github.com/emadalshehery/AI-Photo-Generator" data-ar="عرض الكود المصدري">View Source</a>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
+</div>
+</div>
 
                                 </div>
                             </div>

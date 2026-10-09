@@ -718,7 +718,7 @@ nav{
 /* ===================== Project grid: always-visible square cards ===================== */
 .ProjectGrid{
     display:grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 360px), 360px));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 360px));
     justify-content:center;
     gap:1.5rem;
 }
@@ -750,7 +750,10 @@ nav{
 
 @media (max-width: 1023px){
     .ProjectGrid{ gap:1rem; }
-    .ProjectGrid .ProjectCard{ padding:1rem; }
+    .ProjectGrid .ProjectCard{ padding:.9rem; }
+    .ProjectGrid .ProjectCard .ProjectIcon{ width:40px; height:40px; max-width:40px; margin-bottom:.3rem; }
+    .ProjectGrid .ProjectDescription{ margin-bottom:.5rem; }
+    .ProjectGrid .SkillTags{ margin-bottom:.5rem; }
     .ProjectGrid .ProjectName{ font-size:1.6rem; }
     .ProjectGrid .ProjectDescription{ font-size:1.05rem; }
     .ProjectGrid .ProjectLinks a{ font-size:1.25rem; }
