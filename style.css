@@ -1,4 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Handjet&family');
+@import url('https://fonts.googleapis.com/css2?family=Handjet&display=swap');
+
+@font-face {
+    font-family: 'PixelAE';
+    src: url('fonts/PixelAE-Regular.woff2') format('woff2'),
+         url('fonts/PixelAE-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
 
 *{
     scroll-behavior: smooth;
@@ -767,6 +776,5 @@ html[lang="ar"] *{
     letter-spacing:0 !important;       /* any spacing breaks letter joining */
     -webkit-text-size-adjust:100%;
 }
-/* If Handjet still looks wrong on iPhone, uncomment to use Reem Kufi for Arabic only:
-html[lang="ar"] *{ font-family:'Reem Kufi', sans-serif !important; }
-*/
+/* Arabic uses the downloaded Pixel AE font. English keeps Handjet. */
+html[lang="ar"] *{ font-family:'PixelAE', sans-serif !important; }
