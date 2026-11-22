@@ -1,5 +1,8 @@
 # em1d0 Website
 
+https://emadalshehery.github.io/em1d0/
+
+
 My personal portfolio website: who I am, my content accounts, and the projects I've built. Built with plain HTML, CSS and JavaScript (no frameworks) and fully responsive for phones.
 
 ## Sections
