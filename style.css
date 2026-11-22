@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Handjet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handjet&family=Reem+Kufi&display=swap');
 
 *{
     scroll-behavior: smooth;
@@ -758,3 +758,15 @@ nav{
     .ProjectGrid .ProjectDescription{ font-size:1.05rem; }
     .ProjectGrid .ProjectLinks a{ font-size:1.25rem; }
 }
+
+
+/* ===================== Arabic fixes (iOS) ===================== */
+/* Arabic letters need room to connect and carry dots/marks; line-height:1 clips them. */
+html[lang="ar"] *{
+    line-height:1.5 !important;
+    letter-spacing:0 !important;       /* any spacing breaks letter joining */
+    -webkit-text-size-adjust:100%;
+}
+/* If Handjet still looks wrong on iPhone, uncomment to use Reem Kufi for Arabic only:
+html[lang="ar"] *{ font-family:'Reem Kufi', sans-serif !important; }
+*/
